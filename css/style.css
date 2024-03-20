@@ -308,6 +308,7 @@ hr{
     justify-content: center;
     align-items:center ;
     background-color: antiquewhite;
+    
 }
 .textmensaje {
     margin: 0 auto;
@@ -335,32 +336,28 @@ hr{
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    margin-left: 20%;
+    justify-content: flex-start;
 }
 ul{
     list-style: none;
 }
 .boxcontact:last-child{
     align-self:center;
-    margin-left: 0;
+    padding-left: 0;
+    justify-content: center;
 }
 .boxcontact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding-bottom: 50px;
+    margin-bottom: 40px;
+    padding-left: 20%;
 }
 .footeroptions{
     text-decoration: none;
-    text-align: left;
 }
 .contacttitle {
+    padding-bottom: 10px;
     text-align: left;
     color: aliceblue;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     text-decoration:underline #ff702a;
 }
@@ -368,5 +365,17 @@ ul{
 .contactinfo {
     text-align: left;
     color:aliceblue;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+.logoscontact{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+i{
+    
+    color: #ff702a;
+    font-weight: 1000;
+    font-size: 2rem;
 }
