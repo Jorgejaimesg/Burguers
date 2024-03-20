@@ -298,6 +298,7 @@ hr{
 }}
 
 .mensaje {
+    
     padding: 15%;
     margin:0 auto;
     width: 60%;
@@ -315,4 +316,57 @@ hr{
     font-size: xx-large;
     text-align:center;
     font-weight: 800;
+}
+
+@media screen and (min-width:760px){
+    .mensaje{
+        margin: 0 auto;
+        width: 60%;
+        height: 20px;
+    }
+
+    .textmensaje{
+
+        font-size: 3rem;
+    }}
+
+
+/*--------------------------------------------------------*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 20%;
+}
+ul{
+    list-style: none;
+}
+.boxcontact:last-child{
+    align-self:center;
+    margin-left: 0;
+}
+.boxcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-bottom: 50px;
+}
+.footeroptions{
+    text-decoration: none;
+    text-align: left;
+}
+.contacttitle {
+    text-align: left;
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration:underline #ff702a;
+}
+
+.contactinfo {
+    text-align: left;
+    color:aliceblue;
+    font-size: 1.5rem;
 }
