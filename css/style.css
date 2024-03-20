@@ -5,6 +5,7 @@
     background-color: #1E1D2B;
     padding: 0px;
     margin: 0px;
+    margin-top: 0px;
 }
 
 hr{
@@ -21,8 +22,10 @@ hr{
     color:aliceblue;
     text-decoration: none;
     font-size: 3.5rem;
-    background-color:#1e1d2b00;;
+    background-color:#1e1d2b00;
+    
 }
+
 .navoptions{
     
     width: 100%;
@@ -38,11 +41,14 @@ hr{
     padding-right: 20px;
     left: 0;
     gap:1rem;
-    transition: all 3s;
+    transition: all 0.7s;
     z-index: 3;
 }
+
 .list-icon{
+    display: block;
     cursor: pointer;
+    right: 0;
 
 }
 .menu{
@@ -51,6 +57,7 @@ hr{
 .menu:checked + .navoptions{
     height: calc(100vh - 80px);
 }
+
 .nav{
     
     display: flex;
@@ -58,8 +65,9 @@ hr{
     align-items: center;
     padding-top: 1em;
     flex-wrap: wrap;
-    position: relative;
     height: 80px;
+    z-index: 45;
+    
 }
 
 @media screen and (min-width:760px){
@@ -79,17 +87,20 @@ hr{
 
 .maintitle{
     color:#ff702a;
-    font-size: clamp(3rem,5vw,6rem);
+    font-size: clamp(2.5rem,5vw,6rem);
     text-align: center;
-
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: 800;
 }
 .maintext{
     color: white;
     text-align: left;
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: clamp(1.6rem,2vw,2rem);
+    font-size: clamp(1rem,5vw,1.5rem);
     text-align: center;
+    font-weight: 200;
 }
 .button{
     padding:5px;
@@ -111,8 +122,8 @@ hr{
 .izquierdahome{
     width: max-content;
     display: flex;
-    justify-content: end;
-    width: 100%;
+    justify-content: center;
+    width: 90vw;
     z-index: 0;
 }
 .img{
@@ -140,41 +151,47 @@ hr{
     justify-content: center;
     align-items:center;
     padding-top: 10%;
-    padding: 60px;
+    padding: 10px;
+    
 
 }
-.abouttitle,.titlemenu{
+.abouttitle,.titlemenu,.servicestitle{
     color: #ff702a;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 1%;
     text-align: center;
+    font-weight: 800;
+    
 }
-.abouttext,.textmenu{
+.abouttext,.textmenu,.servicestext{
     color: white;
-    font-size: clamp(3rem,3vw,5rem);
+    font-size: clamp(2rem,2vw,3rem);
     padding-bottom: 2%;
     text-align: center;
+    font-weight: 600;
 }
 .abouttext2{
     color: white;
     font-size: clamp(1rem,2vw,1.5rem);
     padding-bottom: 2%;
     text-align: center;
+    font-weight: 200;
 }
 .izqabout{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100;
     z-index: 1;
     padding: 2%;
     padding-left: 5%;
 }
 .derabout{
+    margin-top: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
 }
 
@@ -186,62 +203,115 @@ hr{
 }}  
 
 /*----------------------------------*/
-.foodmenu {
+.foodmenu,.services{
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.food {
-    margin-top: 50px;
+.food,.infoservices {
+    
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5%;
-    width: 90vw;
-
-
+    
 }
-.foodsquare {
+.foodsquare{
+    
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 500px;
-    padding: 40px;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
     box-shadow:4px 5px 20px 0px  rgba(255,112,42,0.75);;
-    margin-bottom: 30px ;
+    margin-bottom: 50px ;
+    aspect-ratio: 1/1;
     
 }
 .foodimg{
-    background-color: antiquewhite;
-    margin-bottom: 30px;
-    max-width: 100%;
+    
+    background-color: rgba(250, 235, 215, 0);
+    margin-bottom: 10px;
+    width: 70%;
+    height: 70%;
 }
 .name {
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0);
     text-align: center;
-    font-size: 2.5rem;
-    max-width: 100%;
+    font-size: 1.5rem;
 }
 .down {
     background-color: antiquewhite;
-    font-size: 1.5rem;
-    max-width: 100%;
+    font-size: 1rem;
 }
-.price {
+.price{
     background-color: antiquewhite;
     color: #ff702a;
-    font-size: 1.5rem;
-    max-width: 100%;
+    font-size: 1rem;
 }
 @media screen and (min-width:760px){
     .food{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 90vw; 
+}
+} 
+.boxservices{
     
-}} 
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow:4px 5px 20px 0px  rgba(255,112,42,0.75);;
+    margin-bottom: 50px ;
+    aspect-ratio: 1/1;
+}
+.imgservice{
+    width: 200px;
+}
 
+.description {
+    color: white;
+    text-align: center;
+}
+.subservice {
+    color: #ff702a;
+    font-size: 1rem;
+}
+@media screen and (min-width:760px){
+    .infoservices{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw; 
+}}
+
+.mensaje {
+    margin:0 auto;
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background-color: antiquewhite;
+}
+.textmensaje {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    color: #1E1D2B;
+    font-size: xx-large;
+    text-align:center;
+    font-weight: 800;
+}
