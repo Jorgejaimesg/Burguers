@@ -10,10 +10,14 @@
 }
 .container{
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 hr{
     border-color: #ff702a;
+    
 }
 .nav{
     
