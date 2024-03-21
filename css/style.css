@@ -21,7 +21,7 @@ hr{
 .options{
     color:aliceblue;
     text-decoration: none;
-    font-size: 3.5rem;
+    font-size: 2rem;
     background-color:#1e1d2b00;
     
 }
@@ -226,42 +226,61 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     padding: 20px;
     box-shadow:4px 5px 20px 0px  rgba(255,112,42,0.75);;
     margin-bottom: 50px ;
     aspect-ratio: 1/1;
+    position: relative;
     
 }
 .foodimg{
     
     background-color: rgba(250, 235, 215, 0);
     margin-bottom: 10px;
-    width: 70%;
-    height: 70%;
+    width: 150px;
 }
 .name {
     background-color: rgba(250, 235, 215, 0);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .down {
     background-color: antiquewhite;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .price{
     background-color: antiquewhite;
     color: #ff702a;
-    font-size: 1rem;
+    font-size:0.8rem;
 }
+
+i{
+    background-color: #ff702a;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    font-size: xx-large;
+}
+
 @media screen and (min-width:760px){
     .food{
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 90vw; 
+    width: 90%;
 }
+    .foodsquare{
+        width: 20%;
+        height: 20%;
+        aspect-ratio: 1/1;
+    }
+    .foodimg{
+        width: 60%;
+    }
 } 
 .boxservices{
     
@@ -270,20 +289,21 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
     box-shadow:4px 5px 20px 0px  rgba(255,112,42,0.75);;
     margin-bottom: 50px ;
     aspect-ratio: 1/1;
 }
 .imgservice{
-    width: 200px;
+    width: 150px;
 }
 
 .description {
     color: white;
     text-align: center;
+    font-size: 0.8rem;
 }
 .subservice {
     color: #ff702a;
@@ -292,10 +312,21 @@ hr{
 @media screen and (min-width:760px){
     .infoservices{
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 90vw; 
-}}
+    width: 90%; 
+}
+    .boxservices{
+        width: 20%;
+        height: 20%;
+        aspect-ratio: 1/1;
+    }
+    
+    .imgservice{
+        width: 60%;
+    }
+
+}
 
 .mensaje {
     
@@ -321,16 +352,19 @@ hr{
 
 @media screen and (min-width:760px){
     .mensaje{
-        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 60%;
-        height: 20px;
+        height: 200px;
+        padding: 10%;
     }
 
     .textmensaje{
-
         font-size: 3rem;
-    }}
-
+    }
+    
+}
 
 /*--------------------------------------------------------*/
 .contact {
@@ -352,6 +386,7 @@ ul{
 }
 .footeroptions{
     text-decoration: none;
+    color: aliceblue;
 }
 .contacttitle {
     padding-bottom: 10px;
@@ -373,9 +408,32 @@ ul{
     align-self: center;
 }
 
-i{
-    
+is{
+    background-color: none;
     color: #ff702a;
     font-weight: 1000;
     font-size: 2rem;
+}
+@media screen and (min-width:760px){
+    .contact{
+        margin:0 auto;
+        width:90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap:8%;
+    }
+    .boxcontact {
+        padding:0}
+
+    .boxcontact:last-child{
+        align-self:flex-start;
+    }
+    .contacttitle {
+        font-size: 1.2rem;
+    }
+    .contactinfo {
+        font-size: 1rem;;
+    }
 }
