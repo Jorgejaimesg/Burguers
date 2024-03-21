@@ -21,6 +21,7 @@ hr{
     z-index: 45;
     position: fixed;
     width: 100%;
+    border-bottom: solid 2px #ff702a;
     
 }
 .title{
@@ -80,17 +81,27 @@ hr{
         flex-direction: row;
         gap:1.5rem;
         background-color: #1E1D2B;
-        padding-left: 10px;
+        padding: 10px;
+        padding-right: 30px;
     }
     .options{
+        padding: 5px;
         font-size: clamp(1.5em,3vw,2em);
-        transition: 2s;
+        transition: 0.1s;
         
     }
 
     .options:hover{
-        scale: 1.1;
+        border-radius: 10px;
+        outline: solid 1px #ff702a;
         
+    }
+    .options:active{
+        background-color: #ff712ac5;
+    }
+    .options:focus{
+        background-color: #ff712a5d;
+
     }
 }
 
@@ -159,7 +170,7 @@ hr{
     flex-direction: column-reverse;
     justify-content: center;
     align-items:center;
-    
+    padding-top: 100px;
     padding: 10px;
     
 
@@ -188,6 +199,7 @@ hr{
     font-weight: 200;
 }
 .izqabout{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,6 +209,7 @@ hr{
     padding-left: 5%;
 }
 .derabout{
+    
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -204,7 +217,6 @@ hr{
     width: 100vw;
     z-index: 1;
 }
-
 @media screen and (min-width:760px){
     .aboutus{
     flex-direction: row;
@@ -282,6 +294,8 @@ i{
     right: 1px;
     top: 1px;
     font-size: x-large;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @media screen and (min-width:760px){
@@ -292,7 +306,9 @@ i{
     width: 90%;
 }
     .foodsquare{
-        width: 25%;
+        width: 20%;
+        height: 20%;
+        
         aspect-ratio: 1/1;
     }
     .foodimg{
@@ -340,7 +356,7 @@ i{
     }
     
     .imgservice{
-        width: 60%;
+        width: 90%;
     }
 
 }
@@ -368,11 +384,12 @@ i{
 
 @media screen and (min-width:760px){
     .mensaje{
+        margin-top: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 60%;
-        height: 200px;
+        height: 100px;
         padding: 10%;
     }
 
@@ -451,5 +468,12 @@ is{
     }
     .contactinfo {
         font-size: 1rem;;
+    }
+    is:hover{
+        scale: 1.2;
+    }
+
+    .contactinfo li:hover{
+        padding-left: 1px;
     }
 }
