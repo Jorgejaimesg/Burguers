@@ -5,9 +5,11 @@
     padding: 0px;
     margin: 0px;
     scroll-behavior: smooth;
+    
+}
+body{
     overflow-x: hidden;
 }
-
 hr{
     border-color: #ff702a;
     width: 15%;
@@ -139,6 +141,7 @@ li,ul{
     width: max-content;
     font-size: clamp(1.6em,1vw,2em);
     text-decoration: none;
+    box-shadow:  7px 7px 10px 0px #0d0c12;
 
 }
 .derechahome{
