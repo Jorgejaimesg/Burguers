@@ -6,13 +6,11 @@
     padding: 0px;
     margin: 0px;
     scroll-behavior: smooth;
-    
-}
-.container{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 hr{
