@@ -90,14 +90,14 @@ li,ul{
         width: auto;
         height: auto;
         flex-direction: row;
-        gap:1.5rem;
+        gap:2rem;
         background-color: #1E1D2B;
         padding: 10px;
         padding-right: 30px;
     }
     .options{
         padding: 5px;
-        font-size: clamp(1.5em,3vw,2em);
+        font-size: clamp(1.2em,2vw,2em);
         transition: 0.1s;
         
     }
@@ -144,6 +144,7 @@ li,ul{
     box-shadow:  7px 7px 10px 0px #0d0c12;
 
 }
+
 .derechahome{
     display: flex;
     align-items: center;
@@ -484,7 +485,7 @@ is{
         scale: 1.2;
     }
 
-    .contactinfo li:hover{
-        padding-left: 1px;
+    .footeroptions:hover{
+        color:#ff702a;
     }
 }
