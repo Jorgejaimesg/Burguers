@@ -22,9 +22,14 @@ hr{
     z-index: 45;
     position: fixed;
     width: 100%;
-    border-bottom: solid 2px #ff702a;
-    
+    box-shadow:  1px 13px 20px 0px #0d0c12;
+
+
 }
+
+
+    
+
 .title{
     color:#ff702a;
     padding-left: 5%;
