@@ -12,6 +12,7 @@
 
 hr{
     border-color: #ff702a;
+    width: 30%;
     
 }
 .nav{
@@ -438,7 +439,6 @@ ul{
     color: aliceblue;
     font-size: 1.5em;
     font-weight: 600;
-    text-decoration:underline #ff702a;
 }
 
 .contactinfo {
