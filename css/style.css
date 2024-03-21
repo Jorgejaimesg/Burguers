@@ -42,10 +42,12 @@ hr{
     color:aliceblue;
     text-decoration: none;
     font-size: 2rem;
-    background-color:#1e1d2b00;
+    background-color:transparent;
     
 }
-
+li{
+    background-color: transparent;
+}
 .navoptions{
     
     width: 100%;
